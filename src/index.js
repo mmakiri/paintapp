@@ -14,7 +14,7 @@ class MyForm extends React.Component {
           type="text"
         />
 
-        <p>hinta (€/L)</p>
+        <p>Hinta (€/L)</p>
         <input
           type="text"
         />
