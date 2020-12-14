@@ -1,8 +1,9 @@
 # PaintApp - JavaScript School Group Project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+App is hosted on gh-pages - branch. Check it out -> https://mmakiri.github.io/paintapp/
 
-## How to run this app
+## How to run this app localy
 
 In the project directory, you can run:
 
