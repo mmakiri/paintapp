@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/paintapp/static/css/main.a71b5ddd.chunk.css",
-    "main.js": "/paintapp/static/js/main.9216005a.chunk.js",
-    "main.js.map": "/paintapp/static/js/main.9216005a.chunk.js.map",
+    "main.css": "/paintapp/static/css/main.a4161c2d.chunk.css",
+    "main.js": "/paintapp/static/js/main.d7a42fc0.chunk.js",
+    "main.js.map": "/paintapp/static/js/main.d7a42fc0.chunk.js.map",
     "runtime-main.js": "/paintapp/static/js/runtime-main.99a6ae57.js",
     "runtime-main.js.map": "/paintapp/static/js/runtime-main.99a6ae57.js.map",
     "static/js/2.23181106.chunk.js": "/paintapp/static/js/2.23181106.chunk.js",
     "static/js/2.23181106.chunk.js.map": "/paintapp/static/js/2.23181106.chunk.js.map",
     "index.html": "/paintapp/index.html",
-    "static/css/main.a71b5ddd.chunk.css.map": "/paintapp/static/css/main.a71b5ddd.chunk.css.map",
-    "static/js/2.23181106.chunk.js.LICENSE.txt": "/paintapp/static/js/2.23181106.chunk.js.LICENSE.txt"
+    "static/css/main.a4161c2d.chunk.css.map": "/paintapp/static/css/main.a4161c2d.chunk.css.map",
+    "static/js/2.23181106.chunk.js.LICENSE.txt": "/paintapp/static/js/2.23181106.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/paintapp/static/media/tausta2.458c58c1.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.99a6ae57.js",
     "static/js/2.23181106.chunk.js",
-    "static/css/main.a71b5ddd.chunk.css",
-    "static/js/main.9216005a.chunk.js"
+    "static/css/main.a4161c2d.chunk.css",
+    "static/js/main.d7a42fc0.chunk.js"
   ]
 }
