@@ -1,16 +1,4 @@
 # PaintApp - JS/React School Group Project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-App is hosted from secondary branch with github.io - [gh-pages](https://mmakiri.github.io/paintapp/)
-
-## How to run this app localy
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+App is hosted from secondary branch with github.io - [https://mmakiri.github.io/paintapp/](https://mmakiri.github.io/paintapp/)
