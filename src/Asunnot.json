@@ -1,0 +1,77 @@
+[
+    {
+        "name": "Yksiö",
+        "rooms": [
+            {
+                "name": "Makuuhuone",
+                "size": 13,
+                "typeFactor": 1.0
+            },
+            {
+                "name": "Keittiö",
+                "size": 7,
+                "typeFactor": 1.0
+            },
+            {
+                "name": "Kylpyhuone",
+                "size": 5,
+                "typeFactor": 1.1
+            }
+        ]
+    },
+    {
+        "name": "Kaksio",
+        "rooms": [
+            {
+                "name": "Makuuhuone",
+                "size": 16,
+                "typeFactor": 1.2
+            },
+            {
+                "name": "Olohuone",
+                "size": 10,
+                "typeFactor": 1.3
+            },
+            {
+                "name": "Keittiö",
+                "size": 7,
+                "typeFactor": 1.0
+            },
+            {
+                "name": "Kylpyhuone",
+                "size": 6,
+                "typeFactor": 1.0
+            }
+        ]
+    },
+    {
+        "name": "Kolmio",
+        "rooms": [
+            {
+                "name": "Makuuhuone",
+                "size": 14,
+                "typeFactor": 1.3
+            },
+            {
+                "name": "Olohuone",
+                "size": 12,
+                "typeFactor": 1.3
+            },
+            {
+                "name": "Työhuone",
+                "size": 8,
+                "typeFactor": 1.3
+            },
+            {
+                "name": "Keittiö",
+                "size": 9,
+                "typeFactor": 1.0
+            },
+            {
+                "name": "Kylpyhuone",
+                "size": 7,
+                "typeFactor": 1.2
+            }
+        ]
+    }
+]

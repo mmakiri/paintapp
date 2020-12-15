@@ -1,14 +1,14 @@
 import React, { useReducer, useState } from "react";
 import ReactDOM from "react-dom";
-import data from "./data/apartments.json";
+import data from "./Asunnot.json";
 import "../src/styles/index.css";
+
 const formReducer = (state, event) => {
 	return {
 		...state,
 		[event.name]: event.value,
 	};
 };
-
 function Form() {
 	const [formData, setFormData] = useReducer(formReducer, {});
 	const handleSubmit = (event) => {
@@ -68,10 +68,8 @@ const Room = ({
 	return (
 		<div className="huone">
 			<p>
-				{name} {size}m<sup>2</sup> tarvitsee{" "}
-				{Math.round(totalLitersNeeded * 100) / 100}L maalia. Hinta:{" "}
-				{Math.round((totalCost * 100) / 100)}€
-      </p>
+				{name}({size}m<sup>2</sup>) = {Math.round(totalLitersNeeded * 100) / 100}L maalia. Hinta: {Math.round((totalCost * 100) / 100)}€
+      		</p>
 			<br></br>
 		</div>
 	);
@@ -157,7 +155,7 @@ const HousingCooperative = ({ apartments = [], paint }) => {
 						{Math.round((getTotalPrice(apartments, paint) * 100) / 100)}€
           </h3>
 					<h3>
-						Maalin kokonaistarve:{" "}
+						Maalin {paint.paintName} kokonaistarve:{" "}
 						{Math.round((getTotalLiters(apartments, paint) * 100) / 100)}L
           </h3>
 				</div>
