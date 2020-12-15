@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/paintapp/static/css/main.cda368b9.chunk.css",
+    "main.css": "/paintapp/static/css/main.3e5a1df4.chunk.css",
     "main.js": "/paintapp/static/js/main.9a5f3214.chunk.js",
     "main.js.map": "/paintapp/static/js/main.9a5f3214.chunk.js.map",
     "runtime-main.js": "/paintapp/static/js/runtime-main.99a6ae57.js",
@@ -8,14 +8,14 @@
     "static/js/2.abf136e4.chunk.js": "/paintapp/static/js/2.abf136e4.chunk.js",
     "static/js/2.abf136e4.chunk.js.map": "/paintapp/static/js/2.abf136e4.chunk.js.map",
     "index.html": "/paintapp/index.html",
-    "static/css/main.cda368b9.chunk.css.map": "/paintapp/static/css/main.cda368b9.chunk.css.map",
+    "static/css/main.3e5a1df4.chunk.css.map": "/paintapp/static/css/main.3e5a1df4.chunk.css.map",
     "static/js/2.abf136e4.chunk.js.LICENSE.txt": "/paintapp/static/js/2.abf136e4.chunk.js.LICENSE.txt",
     "static/media/index.css": "/paintapp/static/media/background.5cba9c43.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.99a6ae57.js",
     "static/js/2.abf136e4.chunk.js",
-    "static/css/main.cda368b9.chunk.css",
+    "static/css/main.3e5a1df4.chunk.css",
     "static/js/main.9a5f3214.chunk.js"
   ]
 }
