@@ -37,7 +37,7 @@ const HousingCooperative = ({ apartments = [], paint }) => {
                 </div>
                 <div>
                     <h3>Kokonaishinta: {Math.round((getTotalPrice(apartments, paint) * 100) / 100)}€</h3>
-                    <h3>Maalin kokonaistarve {Math.round((getTotalLiters(apartments, paint) * 100) / 100)} litraa</h3>
+                    <h3>Maalin kokonaistarve: {Math.round((getTotalLiters(apartments, paint) * 100) / 100)}L</h3>
                 </div>
             </div>
         </div>

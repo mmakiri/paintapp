@@ -1,6 +1,7 @@
 import React from "react";
 import Room from "./Room";
 
+// make the apartment element here
 const Apartment = ({ name, rooms, paint }) => {
 
     function getTotalPrice(rooms, paint) {
@@ -38,12 +39,12 @@ const Apartment = ({ name, rooms, paint }) => {
     return (
         <div className="asunnot">
             <h3>{name} {getSquareMeters(rooms)}m<sup>2</sup></h3>
-            <div>
+            <div className="rooms">
                 {rooms.map((room, i) => {
                     return <Room key={i} {...room} {...paint} />
                 })}
                 <p>Asunnon maalauksen hinta: {Math.round((getTotalPrice(rooms, paint) * 100) / 100)}€</p>
-                <p>Maalintarve: {Math.round((getTotalLiters(rooms, paint) * 100) / 100)} litraa</p>
+                <p>Maalintarve: {Math.round((getTotalLiters(rooms, paint) * 100) / 100)}L</p>
             </div>
         </div>
 

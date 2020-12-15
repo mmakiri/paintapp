@@ -34,34 +34,27 @@ function Form() {
     }
 
     return (
-        <div>
+        <div className="form">
             <h1>Maalilaskuri</h1>
             <h2>Syötä maalin tiedot:</h2>
             <form onSubmit={handleSubmit}>
-                <label>
-                    <p>Maalin nimi:</p>
-                    <input name="name" required="required" onChange={handleChange} />
-                </label>
-                <label>
-                    <p>Hinta (€/L)</p>
-                    <input name="price" required="required" onChange={handleChange} />
-                </label>
-                <label>
-                    <p>Riittoisuus (m<sup>2</sup>/L): </p>
-                    <input name="coverage" required="required" onChange={handleChange} />
-                </label>
-                <label>
-                    <p>Maalauskerrat</p>
-                    <select name="count" className="selectMenu" onChange={handleChange}>
-                        <option value="">Valitse</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                </label>
+                <p>Maalin nimi:</p>
+                <input name="name" required="required" onChange={handleChange} />
+                <p>Hinta (€/L):</p>
+                <input name="price" required="required" onChange={handleChange} />
+                <p>Riittoisuus (m<sup>2</sup>/L): </p>
+                <input name="coverage" required="required" onChange={handleChange} />
+                <p>Maalauskerrat:</p>
+                <select name="count" className="selectMenu" onChange={handleChange}>
+                    <option value="">Valitse</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
                 <br></br>
-                <button type="submit>" className="submitButton">Lähetä</button>
+                <button type="submit>" className="submitButton">Lähetä tiedot</button>
             </form>
+            <a href="https://github.com/mmakiri/paintapp" target="_blank" rel="noreferrer"><button>Github</button></a>
         </div>
     )
 }
