@@ -73,6 +73,17 @@ input {
 	transition: border-color 0.2s;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
 select {
 	width: 250px;
 	text-align: center;
@@ -85,6 +96,7 @@ select {
 	-moz-appearance: none;
 	text-indent: 0.01px;
 	text-overflow: '';
+	
 }
 
 button {

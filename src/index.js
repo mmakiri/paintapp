@@ -33,20 +33,16 @@ function Form() {
       <h2>Syötä maalin tiedot:</h2>
       <form onSubmit={handleSubmit}>
         <p>Maalin nimi:</p>
-        <input name="name" required="required" onChange={handleChange} />
+        <input type="text" name="name" required="required" onChange={handleChange} />
         <p>Hinta (€/L):</p>
-        <input name="price" required="required" onChange={handleChange} />
+        <input type="number" name="price" required="required" onChange={handleChange} />
         <p>
           Riittoisuus (m<sup>2</sup>/L):{" "}
         </p>
-        <input name="coverage" required="required" onChange={handleChange} />
+        <input type="number" name="coverage" required="required" onChange={handleChange} />
+
         <p>Maalauskerrat:</p>
-        <select name="count" className="selectMenu" onChange={handleChange}>
-          <option value="">Valitse</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-        </select>
+		<input type="number" name="count" required="required" onChange={handleChange} />
         <br></br>
         <button type="submit>" className="submitButton">
           Lähetä tiedot
