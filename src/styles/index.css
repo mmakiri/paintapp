@@ -131,9 +131,6 @@ button:hover {
 @media screen and (max-width: 1080px) {
 	.content {
 		width: 100vw;
-		-webkit-box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 1);
-		-moz-box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 1);
-		box-shadow: inset 0px 0px 100px 10px rgba(0, 0, 0, 1);
 	}
 	h1 {
 		font-size: 10vw;
