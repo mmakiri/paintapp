@@ -1,48 +1,73 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import React, { useReducer, useState } from "react";
+import ReactDOM from "react-dom";
+import data from "./data/apartments.json";
+import HousingCooperative from "./components/HousingCooperative";
+import "../src/styles/index.css";
 
-class MyForm extends React.Component {
-  render() {
-    return (
-      <form>
-        <h1>Maalilaskuri</h1>
-        <p>Maalin nimi:</p>
-        <input
-          type="text"
-        />
-
-        <p>Hinta (€/L)</p>
-        <input
-          type="text"
-        />
-
-        <p>Riittoisuus (m2/L)</p>
-        <input
-          type="text"
-        />
-
-        <p>Maalauskerrat</p>
-        <input
-          type="text"
-        />
-        <p></p>
-        <input
-          type='submit'
-        />
-
-        <h1>TO DO:</h1>
-        <p>CSS tyylitys</p>
-        <p>Aktuaalinen funktionaalisuus</p>
-        <p>Laskuri joka ottaa arvot formista ja sitten näyttää tulokset</p>
-
-      </form>
-    );
-  }
+const formReducer = (state, event) => {
+    return {
+        ...state,
+        [event.name]: event.value
+    }
 }
-ReactDOM.render(<MyForm />, document.getElementById('root'));
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals(console.log);
+function Form() {
+    const [formData, setFormData] = useReducer(formReducer, {});
+
+    const handleSubmit = event => {
+        event.preventDefault();
+
+        var paint = {
+            paintName: event.target.name.value,
+            paintPrice: event.target.price.value,
+            paintCoverage: event.target.coverage.value,
+            paintCount: event.target.count.value
+        }
+        renderResults(paint);
+    }
+
+    const handleChange = event => {
+        setFormData({
+            name: event.target.name,
+            value: event.target.value,
+        });
+    }
+
+    return (
+        <div>
+            <h1>Maalilaskuri</h1>
+            <h2>Syötä maalin tiedot:</h2>
+            <form onSubmit={handleSubmit}>
+                <label>
+                    <p>Maalin nimi:</p>
+                    <input name="name" required="required" onChange={handleChange} />
+                </label>
+                <label>
+                    <p>Hinta (€/L)</p>
+                    <input name="price" required="required" onChange={handleChange} />
+                </label>
+                <label>
+                    <p>Riittoisuus (m<sup>2</sup>/L): </p>
+                    <input name="coverage" required="required" onChange={handleChange} />
+                </label>
+                <label>
+                    <p>Maalauskerrat</p>
+                    <select name="count" className="selectMenu" onChange={handleChange}>
+                        <option value="">Valitse</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </label>
+                <br></br>
+                <button type="submit>" className="submitButton">Lähetä</button>
+            </form>
+        </div>
+    )
+}
+
+function renderResults(paint) {
+    ReactDOM.render(<HousingCooperative apartments={data} paint={paint} />, document.getElementById("result-root"));
+}
+
+ReactDOM.render(<Form />, document.getElementById("root"));
