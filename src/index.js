@@ -81,7 +81,6 @@ const Apartment = ({ name, rooms, paint }) => {
 		let totalPrice = totalLetersNeeded * paintPrice;
 		return totalPrice;
 	}
-
 	function getTotalLiters(rooms, paint) {
 		let paintCount = paint.paintCount;
 		let totalSquareMeters = 0;
@@ -92,7 +91,6 @@ const Apartment = ({ name, rooms, paint }) => {
 		let totalLetersNeeded = (totalSquareMeters / paintCoverage) * paintCount;
 		return totalLetersNeeded;
 	}
-
 	function getSquareMeters(rooms) {
 		let totalSquareMeters = 0;
 		rooms.forEach((element) => {
@@ -110,12 +108,11 @@ const Apartment = ({ name, rooms, paint }) => {
 					return <Room key={i} {...room} {...paint} />;
 				})}
 				<p>
-					Asunnon maalauksen hinta:{" "}
-					{Math.round((getTotalPrice(rooms, paint) * 100) / 100)}€
-        </p>
+					Asunnon maalauksen hinta: {Math.round((getTotalPrice(rooms, paint) * 100) / 100)}€
+        		</p>
 				<p>
 					Maalintarve: {Math.round((getTotalLiters(rooms, paint) * 100) / 100)}L
-        </p>
+        		</p>
 			</div>
 		</div>
 	);
@@ -127,7 +124,6 @@ const HousingCooperative = ({ apartments = [], paint }) => {
 		var totalPrice = totalLitersNeeded * paintPrice;
 		return totalPrice;
 	}
-
 	function getTotalLiters(apartments, paint) {
 		let paintCount = paint.paintCount;
 		let totalSquareMeters = 0;
@@ -153,17 +149,16 @@ const HousingCooperative = ({ apartments = [], paint }) => {
 					<h3>
 						Kokonaishinta:{" "}
 						{Math.round((getTotalPrice(apartments, paint) * 100) / 100)}€
-          </h3>
+          			</h3>
 					<h3>
 						Maalin {paint.paintName} kokonaistarve:{" "}
 						{Math.round((getTotalLiters(apartments, paint) * 100) / 100)}L
-          </h3>
+					</h3>
 				</div>
 			</div>
 		</div>
 	);
 };
-
 function renderResults(paint) {
 	ReactDOM.render(
 		<HousingCooperative apartments={data} paint={paint} />,
