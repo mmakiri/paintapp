@@ -27,7 +27,7 @@ const HousingCooperative = ({ apartments = [], paint }) => {
     }
 
     return (
-        <div>
+        <div className="results">
             <div>
                 <h2>Asunnot:</h2>
                 <div className="apartments">
