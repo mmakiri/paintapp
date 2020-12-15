@@ -1,6 +1,6 @@
 import React, { useReducer, useState } from "react";
 import ReactDOM from "react-dom";
-import data from "./Asunnot.json";
+import data from "./data/Asunnot.json";
 import "../src/styles/index.css";
 
 const formReducer = (state, event) => {
